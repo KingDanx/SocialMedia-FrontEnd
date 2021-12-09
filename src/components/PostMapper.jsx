@@ -20,6 +20,21 @@ const PostMapper = ({ user, render, allUsers, setProfile }) => {
 
   let postObjectArray = [];
 
+  if (user.posts !== []) {
+          user.posts.map((el) => {
+          postObjectArray.push({
+          firstName: user.firstName,
+          lastName: user.lastName,
+          image: user.image,
+          _id: user._id,
+          post: el.body,
+          likes: el.likes,
+          dateModified: el.dateModified,
+      });
+    });
+  }
+  
+
   friendPostArray.map((el) => {
     el.posts.map((post) => {
       postObjectArray.push({
