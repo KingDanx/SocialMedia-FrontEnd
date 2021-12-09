@@ -3,13 +3,14 @@ import Card from "@mui/material/Card";
 import axios from "axios";
 import "./styles/Post.css";
 import trollFace from "../images/troll-face.jpg";
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 import "./styles/Post.css";
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import "./styles/PostMapper.css";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 const PostMapper = ({ user, render, allUsers, setProfile }) => {
   let friendPostArray = allUsers.filter((friend) =>
@@ -28,7 +29,7 @@ const PostMapper = ({ user, render, allUsers, setProfile }) => {
         _id: el._id,
         post: post.body,
         likes: post.likes,
-        dateModified: post.dateModified
+        dateModified: post.dateModified,
       });
     });
   });
@@ -58,14 +59,14 @@ const PostMapper = ({ user, render, allUsers, setProfile }) => {
   };
 
   return (
-    <div>
+    <div className="post-mapper-all">
       <div>
         {sortByDateArray
           .slice(0)
           .reverse()
           .map((friend, index) => (
-            <div key={index}>
-              <Card sx={{ maxWidth: 250 }}>
+            <div className="card" key={index}>
+              <Card sx={{ maxWidth: 400 }}>
                 <CardMedia
                   component="img"
                   alt="green iguana"
@@ -88,8 +89,16 @@ const PostMapper = ({ user, render, allUsers, setProfile }) => {
                   <Button onClick={() => addLike(friend)} size="small">
                     {" "}
                     <FavoriteIcon />
-                    {friend.likes} 
-                  </Button><span>{friend.dateModified.slice(0, -8).replace('T',' ').replace('Z','')}</span>
+                    {friend.likes}
+                  </Button>
+                  <div className="date-margin">
+                    <b>
+                      {friend.dateModified
+                        .slice(0, -8)
+                        .replace("T", " ")
+                        .replace("Z", "")}
+                    </b>
+                  </div>
                 </CardActions>
               </Card>
             </div>

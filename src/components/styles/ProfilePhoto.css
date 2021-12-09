@@ -4,6 +4,8 @@
     margin-left: 14px;
     min-width: 200px;
     min-height: 200px;
+    backdrop-filter: blur(6px);
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .add-photo-button {

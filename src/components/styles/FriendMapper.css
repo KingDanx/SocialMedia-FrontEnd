@@ -24,5 +24,6 @@
     background-image: linear-gradient(233deg, #717171, #1a76d2);
     border-bottom-right-radius: 500px;
     border-top-right-radius: 500px;
+    min-height: 61.27px!important;
 }
 

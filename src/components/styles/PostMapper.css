@@ -1,0 +1,14 @@
+.post-mapper-all{
+    display: grid;
+    justify-content: center;
+}
+
+.date-margin{
+    margin-left: 173px;
+}
+
+.card{
+    margin-bottom: 8px;
+    backdrop-filter: blur(6px);
+    filter: drop-shadow(2px 4px 6px black);
+}
