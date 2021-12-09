@@ -1,0 +1,28 @@
+.friend-image-mapper{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    backdrop-filter: blur(6px);
+    filter: drop-shadow(2px 4px 6px black);
+    background-image: linear-gradient(233deg, #717171, #1a76d2);
+}
+
+.div-mappers{
+    display: inline-flex;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.span-mapper {
+    font-size: 24px;
+    color: whitesmoke;
+    padding-top: 2px;
+    padding-right: 255px;
+    padding-left: 10px;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    filter: drop-shadow(2px 4px 6px black);
+    background-image: linear-gradient(233deg, #717171, #1a76d2);
+    border-bottom-right-radius: 500px;
+    border-top-right-radius: 500px;
+}
+

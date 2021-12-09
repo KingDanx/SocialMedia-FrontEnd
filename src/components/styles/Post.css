@@ -1,0 +1,27 @@
+.add-post-button {
+    margin-left: 20px;
+    margin-top: 4px!important;
+    background-color: transparent!important;
+    border: none!important;
+    box-shadow: none!important;
+    margin-top: 0px;
+    padding: 7px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.posts-text {
+    margin-top: 77px;
+}
+
+.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    overflow: hidden;
+    max-width: 345px;
+    margin-bottom: 5px!important;
+}

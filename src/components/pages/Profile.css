@@ -1,0 +1,128 @@
+.profile-page-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.profile-feed{
+    background-color: rgb(242, 180, 99);
+    height: 500px;
+    border-radius: 15%;
+}
+
+.about-me{
+    background-color: rgb(242, 180, 99);
+    height: 500px;
+}
+
+.icon-tab-style {
+    display: grid;
+    grid-template-columns: 30% 80%;
+}
+
+.text-tab-style {
+    padding-top: 6px;
+}
+
+.tabs {
+    margin-right: 10px;
+}
+
+.PrivateTabIndicator-colorSecondary-7 {
+    background-color: #717171!important;
+}
+
+label[data-shrink=false]+.MuiInputBase-formControl .css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
+    width: 275px!important;
+}
+.css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled {
+    opacity: 1;
+    width: 275px!important;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.38);
+}
+
+
+.about-me-button {
+    background-color: transparent!important;
+    border: none!important;
+    box-shadow: none!important;
+    margin-left: 20px;
+    margin-top: 4px;
+    padding: 7px!important;
+}
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    margin-left: 14px!important;
+}
+
+.notifiactions-image-text {
+    margin-left: -12px;
+}
+
+.register-here-button {
+    display: grid;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.login-text-field {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 45px;
+}
+
+.login-title{
+    font-family: 'Sarina', cursive;
+}
+.whole-login-div {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cat-reg-div {
+    transform: rotate(20deg);
+    margin-left: 147px;
+    margin-top: 123px;
+}
+
+.cat-cig-div {
+    transform: rotate(-20deg);
+    margin-left: -1px;
+    margin-top: 84px;
+}
+
+.cat-reg-img {
+    border-radius: 20px;
+}
+
+.post-text-field {
+    display: grid;
+    justify-content: center;
+}
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+    display: flex!important;
+    margin-right: 20px!important;
+    margin-left: 20px!important;
+ 
+}
+
+.MuiButtonBase-root {
+    -moz-appearance: none;
+}
+
+.post-mapper {
+    display: flex;
+    justify-content: center;
+}
+
+.style-about-me {
+    display: block;
+    margin-left: -3px;
+    width: 280px;
+}
+
+.post-text{
+    margin-top: 77px;
+}

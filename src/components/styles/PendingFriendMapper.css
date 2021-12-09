@@ -1,0 +1,28 @@
+.deny-friend-button {
+    cursor: pointer;
+}
+.add-friend-button {
+    cursor: pointer;
+}
+
+.span-mapper-pending {
+    font-size: 24px;
+    display: flex;
+    color: whitesmoke;
+    padding-right: 255px;
+    padding-left: 8px;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    filter: drop-shadow(2px 4px 6px black);
+    background-image: linear-gradient(233deg, #717171, #1a76d2);
+    border-bottom-right-radius: 500px;
+    border-top-right-radius: 500px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.font-size-yes-no{
+    font-size: 35px;
+    cursor: pointer;
+}
