@@ -82,10 +82,11 @@ const PostMapper = ({ user, render, allUsers, setProfile }) => {
           .map((friend, index) => (
             <div className="card" key={index}>
               <Card sx={{ maxWidth: 400 }}>
+                <div className="style-post-name">{friend.firstName} {friend.lastName}</div>
                 <CardMedia
                   component="img"
                   alt="green iguana"
-                  height="70"
+                  height="80"
                   image={
                     !friend.image
                       ? trollFace

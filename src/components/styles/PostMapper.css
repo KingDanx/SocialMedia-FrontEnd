@@ -12,3 +12,18 @@
     backdrop-filter: blur(6px);
     filter: drop-shadow(2px 4px 6px black);
 }
+
+.style-post-name {
+    position: fixed;
+    margin-left: px;
+    font-size: 14px;
+    font-family: fantasy;
+    color: whitesmoke;
+    background-image: linear-gradient(to right top,#1fff88, #3b8ad9);
+    border-radius: 500px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+}
