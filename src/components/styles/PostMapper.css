@@ -16,10 +16,10 @@
 .style-post-name {
     position: fixed;
     margin-left: px;
-    font-size: 14px;
+    font-size: 20px;
     font-family: fantasy;
     color: whitesmoke;
-    background-image: linear-gradient(to right top,#1fff88, #3b8ad9);
+    background-image: linear-gradient(to right top, #3b8ad9,#00cebd);
     border-radius: 500px;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 0px;
