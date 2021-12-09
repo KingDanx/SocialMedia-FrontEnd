@@ -25,5 +25,6 @@
     border-bottom-right-radius: 500px;
     border-top-right-radius: 500px;
     min-height: 61.27px!important;
+    max-width: 75px!important;
 }
 
