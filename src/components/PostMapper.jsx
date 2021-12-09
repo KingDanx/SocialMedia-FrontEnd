@@ -11,6 +11,7 @@ import Button from "@mui/material/Button";
 import "./styles/Post.css";
 import "./styles/PostMapper.css";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
 const PostMapper = ({ user, render, allUsers, setProfile }) => {
   let friendPostArray = allUsers.filter((friend) =>
@@ -21,19 +22,19 @@ const PostMapper = ({ user, render, allUsers, setProfile }) => {
   let postObjectArray = [];
 
   if (user.posts !== []) {
-          user.posts.map((el) => {
-          postObjectArray.push({
-          firstName: user.firstName,
-          lastName: user.lastName,
-          image: user.image,
-          _id: user._id,
-          post: el.body,
-          likes: el.likes,
-          dateModified: el.dateModified,
+    user.posts.map((el) => {
+      postObjectArray.push({
+        firstName: user.firstName,
+        lastName: user.lastName,
+        image: user.image,
+        _id: user._id,
+        post: el.body,
+        likes: el.likes,
+        dateModified: el.dateModified,
       });
     });
   }
-  
+
 
   friendPostArray.map((el) => {
     el.posts.map((post) => {
@@ -82,7 +83,8 @@ const PostMapper = ({ user, render, allUsers, setProfile }) => {
           .map((friend, index) => (
             <div className="card" key={index}>
               <Card sx={{ maxWidth: 400 }}>
-                <div className="style-post-name">{friend.firstName} {friend.lastName}</div>
+                <div className="style-post-name">{friend.firstName} {friend.lastName}</div><DeleteForeverIcon className="
+.style-trashcan"/>
                 <CardMedia
                   component="img"
                   alt="green iguana"

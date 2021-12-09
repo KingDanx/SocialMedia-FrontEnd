@@ -27,3 +27,14 @@
     padding-right: 8px;
 
 }
+.style-trashcan {
+  
+}
+svg{
+    float: right!important;
+    position: absolute!important;
+    right: 0!important;
+    margin-right: 4px!important;
+    margin-top: 2px!important;
+    font-size: xx-large!important;
+}
