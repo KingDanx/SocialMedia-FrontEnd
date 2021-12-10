@@ -22,8 +22,8 @@ const PostMapper = ({ user, render, allUsers, setProfile }) => {
   let postObjectArray = [];
 
   if (user.posts !== []) {
-    user.posts.map((el) => {
-      postObjectArray.push({
+        user.posts.map((el) => {
+       postObjectArray.push({
         firstName: user.firstName,
         lastName: user.lastName,
         image: user.image,
@@ -83,8 +83,7 @@ const PostMapper = ({ user, render, allUsers, setProfile }) => {
           .map((friend, index) => (
             <div className="card" key={index}>
               <Card sx={{ maxWidth: 400 }}>
-                <div className="style-post-name">{friend.firstName} {friend.lastName}</div><DeleteForeverIcon className="
-.style-trashcan"/>
+                <div className="style-post-name">{friend.firstName} {friend.lastName}{user._id === friend._id ? <span className="style-trashcan"><DeleteForeverIcon /></span> : null}</div>
                 <CardMedia
                   component="img"
                   alt="green iguana"
@@ -113,7 +112,7 @@ const PostMapper = ({ user, render, allUsers, setProfile }) => {
                     <b>
                       {friend.dateModified
                         .slice(0, -8)
-                        .replace("T", " ")
+                        .replace("T", " at ")
                         .replace("Z", "")}
                     </b>
                   </div>

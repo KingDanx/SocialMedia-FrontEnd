@@ -25,12 +25,8 @@
     border-bottom-left-radius: 0px;
     padding-left: 8px;
     padding-right: 8px;
-
 }
 .style-trashcan {
-  
-}
-svg{
     float: right!important;
     position: absolute!important;
     right: 0!important;
@@ -38,3 +34,4 @@ svg{
     margin-top: 2px!important;
     font-size: xx-large!important;
 }
+
